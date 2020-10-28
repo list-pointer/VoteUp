@@ -111,7 +111,7 @@ public class VoteUpFrame extends JFrame {
                 else
                     Result.setText("It is a TIE!!!");
                 //Timer
-                new Timer(3000, e1 -> Result.setText("")).start();
+                new Timer(10000, e1 -> Result.setText("")).start();
                 ShowResult.setVisible(false);
             } catch (Exception ex) {
                 ex.printStackTrace();
