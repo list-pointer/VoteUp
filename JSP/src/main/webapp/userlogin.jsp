@@ -62,7 +62,7 @@
                                    type="submit" value="Login">
                         </form>
                         <p class="login-card-footer-text" style="margin-top: 50px;">
-                            Don't have an account? <a class="text-reset" href="signup.html">Register
+                            Don't have an account? <a class="text-reset" href="usersignup.jsp">Register
                             here</a>
                         </p>
                     </div>

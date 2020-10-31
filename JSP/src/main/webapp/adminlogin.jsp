@@ -48,7 +48,7 @@
                             <div class="form-group">
                                 <label class="sr-only" for="email">Admin ID</label> <input
                                     class="form-control" id="email" name="email"
-                                    placeholder="UID" type="text" maxlength=10 onkeypress="return onlyNumberKey(event)">
+                                    placeholder="Admin Id" type="text" maxlength=10 onkeypress="return onlyNumberKey(event)">
                             </div>
                             <div class="form-group mb-4">
                                 <label class="sr-only" for="password">Password</label> <input
@@ -58,10 +58,6 @@
                             <input class="btn btn-block login-btn" id="login" name="login"
                                    type="submit" value="Login">
                         </form>
-                        <p class="login-card-footer-text" style="margin-top: 50px;">
-                            Don't have an account? <a class="text-reset" href="signup.html">Register
-                            here</a>
-                        </p>
                     </div>
                 </div>
             </div>

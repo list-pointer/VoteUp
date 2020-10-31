@@ -52,7 +52,7 @@
     <%
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/jsp_voteup", "root", "root");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/jsp_voteup", "root", "3569");
             System.out.println("** Connection has been established **");
 
             PreparedStatement statement = connection.prepareStatement("select * from answertable where u_id=" + session.getAttribute("uid") + " order by q_id");
