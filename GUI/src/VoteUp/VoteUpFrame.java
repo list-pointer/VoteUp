@@ -29,7 +29,7 @@ public class VoteUpFrame extends JFrame {
         ShowResult.setVisible(false);
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");  //Setting up connection
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/voteup", "root", "3569");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/voteup", "", "");
 
             System.out.println("** Connection has been established **");
         } catch (Exception e) {
