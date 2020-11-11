@@ -10,14 +10,14 @@
     <link href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/signUp.css" rel="stylesheet">
-    <script> 
-	    function onlyNumberKey(evt) {
-	        var ASCIICode = (evt.which) ? evt.which : evt.keyCode 
-	        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57)) 
-	            return false; 
-	        return true; 
-	    } 
-	</script> 
+    <script>
+        function onlyNumberKey(evt) {
+            var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+            if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+                return false;
+            return true;
+        }
+    </script>
 </head>
 
 <body>
@@ -27,12 +27,12 @@
             <div class="col-sm-6 login-section-wrapper">
                 <div class="login-wrapper my-auto">
                     <h1 class="login-title">Register Here</h1>
-                    
+
                     <form action="signup" method="post">
                         <div class="form-group">
                             <label for="uid">UID</label>
-                            <input class="form-control" id="uid" name="uid" placeholder="Enter UID"
-                                   type="text" maxlength=10 onkeypress="return onlyNumberKey(event)"/>
+                            <input class="form-control" id="uid" maxlength=10 name="uid"
+                                   onkeypress="return onlyNumberKey(event)" placeholder="Enter UID" type="text"/>
                         </div>
                         <div class="form-group mb-4">
                             <label for="uName">Name</label>
@@ -49,8 +49,9 @@
                         </div>
                         <input class="btn btn-block login-btn" id="login" name="login" type="submit" value="Register">
                     </form>
-                    <p class="login-wrapper-footer-text" style="margin-top: 50px;">Already Have an Account? <a class="text-reset"
-                                                                                                       href="login.html">Login</a>
+                    <p class="login-wrapper-footer-text" style="margin-top: 50px;">Already Have an Account? <a
+                            class="text-reset"
+                            href="login.html">Login</a>
                     </p>
                 </div>
             </div>
